@@ -14,7 +14,7 @@
 
 <br><br>
 <h3>LEVEL 1 &#9989;</h3>
-<h3>LEVEL 2 </h3>.
-<p>Get all comments for a post completed, but due to the lack of knowledge in front-end, cannot post a comment.
+<h3>LEVEL 2 </h3>
+<p><strong>Get all comments for a post</strong> completed, but due to the lack of knowledge in <em>front-end</em>, cannot perform the task properly to post a comment.
 <br>
-But the database been created contains the comment.</p>
+<u>But the database been created contains the comment</u></p>
