@@ -1,4 +1,4 @@
-# evolve-backend-challenge
+# EVOLVE BACKEND CHALLENGE
 
 <h2> REASONS TO USE SQL </h2>
 <ul>
