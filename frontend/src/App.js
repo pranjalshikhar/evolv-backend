@@ -7,6 +7,9 @@ function App() {
   const [blogTitle, setBlogTitle] = useState("");
   const [blogBody, setBlogBody] = useState("");
   const [blogBodyList, setBlogList] = useState("");
+  const [blogId, setBlogId] = useState("");
+  const [commBody, setCommBody] = useState("");
+  const [commBodyList, setCommList] = useState("");
 
   useEffect(() => {
     Axios.get("http://localhost:8000/api/get").then((response) => {
@@ -21,6 +24,16 @@ function App() {
       setBlogList([
         ...blogBodyList,
         {blogTitle: blogTitle, blogBody: blogBody},
+      ]);
+    };
+
+  const submitComment = () => {
+    Axios.post("http://localhost:8000/api/insert/comment/id", {
+      blogId: blogId,
+      commBody: commBody    });
+      setCommList([
+        ...commBodyList,
+        {blogId: blogId, commBody: commBody},
       ]);
     };
 
@@ -39,6 +52,18 @@ function App() {
         }} />
 
         <button onClick={submitBlog}> Submit </button>
+        <br />
+        <br />
+
+        <label>Add Blog ID</label>
+        <input type="number" name="id" onChange={(e) => {
+          setBlogId(e.target.valueAsNumber);
+        }} />
+        <label>Add Comment</label>
+        <input type="text" name="commBody" onChange={(e) => {
+          setCommBody(e.target.value);
+        }} />
+        <button onClick={submitComment}> Post Comment </button>
 
         
         {/* ----Live Rendering----   */}

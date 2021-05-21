@@ -90,9 +90,9 @@ app.put("/api/update/:id", (req, res) => {
         console.log(`updated : ${[req.params.id]}`);
     });
 
-    console.log(blogBody);
-    console.log(blogId);
-    console.log(sqlUpdateById);
+    // console.log(blogBody);
+    // console.log(blogId);
+    // console.log(sqlUpdateById);
 });
 
 
