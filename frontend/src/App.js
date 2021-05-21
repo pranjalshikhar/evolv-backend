@@ -27,15 +27,15 @@ function App() {
       ]);
     };
 
-  const submitComment = () => {
-    Axios.post("http://localhost:8000/api/insert/comment/id", {
-      blogId: blogId,
-      commBody: commBody    });
-      setCommList([
-        ...commBodyList,
-        {blogId: blogId, commBody: commBody},
-      ]);
-    };
+  // const submitComment = () => {
+  //   Axios.post("http://localhost:8000/api/insert/comment/id", {
+  //     blogId: blogId,
+  //     commBody: commBody    });
+  //     setCommList([
+  //       ...commBodyList,
+  //       {blogId: blogId, commBody: commBody},
+  //     ]);
+  //   };
 
   return (
     <div className="App">
@@ -63,7 +63,7 @@ function App() {
         <input type="text" name="commBody" onChange={(e) => {
           setCommBody(e.target.value);
         }} />
-        <button onClick={submitComment}> Post Comment </button>
+        {/* <button onClick={submitComment}> Post Comment </button> */}
 
         
         {/* ----Live Rendering----   */}

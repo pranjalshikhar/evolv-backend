@@ -11,3 +11,10 @@
 
 <h2>Schema </h2>
 <img src="https://raw.githubusercontent.com/pranjalshikhar/evolv-backend/9de891d26583ce2a5ad41767b8b9871863c02636/schema.svg" />
+
+<br><br>
+<h3>LEVEL 1 &#9989;</h3>
+<h3>LEVEL 2 </h3>.
+<p>Get all comments for a post completed, but due to the lack of knowledge in front-end, cannot post a comment.
+<br>
+But the database been created contains the comment.</p>
