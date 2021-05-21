@@ -18,3 +18,7 @@
 <p><strong>Get all comments for a post</strong> completed, but due to the lack of knowledge in <em>front-end</em>, cannot perform the task properly to post a comment.
 <br>
 <h4>"But the database been created contains the comment."</h4></p>
+
+<br><br>
+<img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" height="40px" width="40px">
+https://raw.githubusercontent.com/pranjalshikhar/evolv-backend/main/BLOG-APP.postman_collection.json
